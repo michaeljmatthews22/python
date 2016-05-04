@@ -1,0 +1,1314 @@
+
+
+
+
+
+
+
+Watch Live Sports Events and ESPN Programs Online and on Mobile Applications - WatchESPN
+
+
+
+
+
+
+if (window.location.protocol == 'https:') {window.location.href = window.location.href.replace(/^https/, 'http')}var g_pageType = "watchespnindex";var g_channel = "";var g_category = "";var g_league = "";var g_search = "";var g_days = "";var remoteAccess = false;var g_switchempty = true;
+
+
+
+
+
+
+.channel-logo {text-indent: 100%;}
+.partner-logo { margin-right: 20px !important;}
+div.play{ display:block; height:58px; left:308px; position: absolute !important; top: 144px; width 58px; }
+var apProviders = {
+"ATT" : { "ID" : "ATT", "websiteURL" : "http://www.att.com", "displayName" : "AT&T U-verse" },"Brighthouse" : { "ID" : "Brighthouse", "websiteURL" : "http://brighthouse.com/corporate/support/contact", "displayName" : "Bright House Networks" },"Charter_Direct" : { "ID" : "Charter_Direct", "websiteURL" : "http://www.charter.com", "displayName" : "Charter Spectrum " },"Comcast_SSO" : { "ID" : "Comcast_SSO", "websiteURL" : "http://xfinitytv.comcast.net/", "displayName" : "Comcast XFINITY" },"Cox" : { "ID" : "Cox", "websiteURL" : "http://ww2.cox.com", "displayName" : "Cox" },"DTV" : { "ID" : "DTV", "websiteURL" : "http://directv.com", "displayName" : "DIRECTV" },"Dish" : { "ID" : "Dish", "websiteURL" : "http://mydish.com", "displayName" : "DISH" },"Mediacom" : { "ID" : "Mediacom", "websiteURL" : "http://www.mediacomcc.com", "displayName" : "Mediacom" },"Cablevision" : { "ID" : "Cablevision", "websiteURL" : "http://www.optimum.net", "displayName" : "Optimum" },"Suddenlink" : { "ID" : "Suddenlink", "websiteURL" : "http://www.suddenlink.com", "displayName" : "Suddenlink" },"TWC" : { "ID" : "TWC", "websiteURL" : "http://www.timewarnercable.com/contact", "displayName" : "Time Warner Cable" },"Verizon" : { "ID" : "Verizon", "websiteURL" : "http://verizon.com/myverizon", "displayName" : "Verizon Fios" },"thr030" : { "ID" : "thr030", "websiteURL" : "http://www.3rivers.net/", "displayName" : "3 Rivers Communications" },"com140" : { "ID" : "com140", "websiteURL" : "http://espn.go.com", "displayName" : "Access Montana" },"acecommunications" : { "ID" : "acecommunications", "websiteURL" : "http://espn.go.com", "displayName" : "AcenTek" },"acm010" : { "ID" : "acm010", "websiteURL" : "http://espn.go.com", "displayName" : "Acme Communications" },"ada020" : { "ID" : "ada020", "websiteURL" : "http://espn.go.com", "displayName" : "Adams Cable Service" },"ACC" : { "ID" : "ACC", "websiteURL" : "http://espn.go.com", "displayName" : "Advanced Cable Communications" },"algona" : { "ID" : "algona", "websiteURL" : "http://espn.go.com", "displayName" : "Algona Municipal Utilities" },"allwest" : { "ID" : "allwest", "websiteURL" : "http://espn.go.com", "displayName" : "All West Communications" },"all025" : { "ID" : "all025", "websiteURL" : "http://espn.go.com", "displayName" : "Allen's Communications" },"spl010" : { "ID" : "spl010", "websiteURL" : "http://espn.go.com", "displayName" : "Alliance Communications" },"all070" : { "ID" : "all070", "websiteURL" : "http://espn.go.com", "displayName" : "ALLO Communications" },"alpine" : { "ID" : "alpine", "websiteURL" : "http://espn.go.com", "displayName" : "Alpine Communications" },"hun015" : { "ID" : "hun015", "websiteURL" : "http://espn.go.com", "displayName" : "American Broadband" },"com130-02" : { "ID" : "com130-02", "websiteURL" : "http://espn.go.com", "displayName" : "American Community Networks" },"com130-01" : { "ID" : "com130-01", "websiteURL" : "http://espn.go.com", "displayName" : "American Warrior Networks" },"tvc020" : { "ID" : "tvc020", "websiteURL" : "http://espn.go.com", "displayName" : "Andycable" },"ANTIETAM" : { "ID" : "ANTIETAM", "websiteURL" : "http://espn.go.com", "displayName" : "Antietam" },"arkwest" : { "ID" : "arkwest", "websiteURL" : "http://espn.go.com", "displayName" : "Arkwest Communications" },"auth_armstrongmywire_com" : { "ID" : "auth_armstrongmywire_com", "websiteURL" : "http://www.armstrongmywire.com/", "displayName" : "Armstrong" },"arvig" : { "ID" : "arvig", "websiteURL" : "http://espn.go.com", "displayName" : "Arvig " },"nttcash010" : { "ID" : "nttcash010", "websiteURL" : "http://espn.go.com", "displayName" : "Ashland Home Net" },"astound" : { "ID" : "astound", "websiteURL" : "http://espn.go.com", "displayName" : "Astound" },"dix030" : { "ID" : "dix030", "websiteURL" : "http://espn.go.com", "displayName" : "ATC Broadband" },"ara010" : { "ID" : "ara010", "websiteURL" : "http://espn.go.com", "displayName" : "ATC Communications" },"auth_atlanticbb_net" : { "ID" : "auth_atlanticbb_net", "websiteURL" : "http://www.atlanticbb.net", "displayName" : "Atlantic Broadband" },"ATMC" : { "ID" : "ATMC", "websiteURL" : "http://espn.go.com", "displayName" : "ATMC" },"baldwin" : { "ID" : "baldwin", "websiteURL" : "http://espn.go.com", "displayName" : "Baldwin Telecom, Inc." },"bal040" : { "ID" : "bal040", "websiteURL" : "http://espn.go.com", "displayName" : "Ballard TV" },"cit025" : { "ID" : "cit025", "websiteURL" : "http://espn.go.com", "displayName" : "Bardstown Cable TV" },"bay030" : { "ID" : "bay030", "websiteURL" : "http://espn.go.com", "displayName" : "Bay Country Communications" },"tel095" : { "ID" : "tel095", "websiteURL" : "http://espn.go.com", "displayName" : "Beaver Creek Cooperative Telephone" },"bea020" : { "ID" : "bea020", "websiteURL" : "http://espn.go.com", "displayName" : "Beaver Valley Cable" },"bee010" : { "ID" : "bee010", "websiteURL" : "http://espn.go.com", "displayName" : "Bee Line Cable" },"bektel" : { "ID" : "bektel", "websiteURL" : "http://www.bektel.com", "displayName" : "BEK TV" },"bra020" : { "ID" : "bra020", "websiteURL" : "http://espn.go.com", "displayName" : "BELD " },"bel020" : { "ID" : "bel020", "websiteURL" : "http://espn.go.com", "displayName" : "Bellevue Municipal Cable" },"vol040-01" : { "ID" : "vol040-01", "websiteURL" : "http://espn.go.com", "displayName" : "Ben Lomand Connect / BLTV" },"Bend" : { "ID" : "Bend", "websiteURL" : "http://www.bendbroadband.com", "displayName" : "BendBroadband" },"bev010" : { "ID" : "bev010", "websiteURL" : "http://espn.go.com", "displayName" : "BEVCOMM" },"big020" : { "ID" : "big020", "websiteURL" : "http://espn.go.com", "displayName" : "Big Sandy Broadband" },"ble020" : { "ID" : "ble020", "websiteURL" : "http://espn.go.com", "displayName" : "Bledsoe Telephone Cooperative" },"www_websso_mybrctv_com" : { "ID" : "www_websso_mybrctv_com", "websiteURL" : "http://www.mybrctv.com", "displayName" : "Blue Ridge Communications" },"bra050" : { "ID" : "bra050", "websiteURL" : "http://espn.go.com", "displayName" : "Brandenburg Telephone Co." },"bte010" : { "ID" : "bte010", "websiteURL" : "http://espn.go.com", "displayName" : "Bristol Tennessee Essential Services" },"annearundel" : { "ID" : "annearundel", "websiteURL" : "http://espn.go.com", "displayName" : "Broadstripe" },"btc010" : { "ID" : "btc010", "websiteURL" : "http://espn.go.com", "displayName" : "BTC Communications" },"btc040" : { "ID" : "btc040", "websiteURL" : "http://espn.go.com", "displayName" : "BTC Vision - Nahunta" },"BUCKEYE" : { "ID" : "BUCKEYE", "websiteURL" : "http://Buckeyecablesystem.net", "displayName" : "Buckeye Cable System" },"bul010" : { "ID" : "bul010", "websiteURL" : "http://espn.go.com", "displayName" : "Bulloch Telephone Cooperative" },"burlington_auth-gateway_net" : { "ID" : "burlington_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Burlington Telecom" },"but010" : { "ID" : "but010", "websiteURL" : "http://espn.go.com", "displayName" : "Butler-Bremer Communications" },"BVU" : { "ID" : "BVU", "websiteURL" : "http://espn.go.com", "displayName" : "BVU Optinet - TV" },"cspire_auth-gateway_net" : { "ID" : "cspire_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "C Spire " },"tel160-csp" : { "ID" : "tel160-csp", "websiteURL" : "http://espn.go.com", "displayName" : "C Spire SNAP" },"auth_cableone_net" : { "ID" : "auth_cableone_net", "websiteURL" : "http://espn.go.com", "displayName" : "Cable ONE" },"csicable" : { "ID" : "csicable", "websiteURL" : "http://espn.go.com", "displayName" : "Cable Services Inc." },"phe030" : { "ID" : "phe030", "websiteURL" : "http://espn.go.com", "displayName" : "Cable TV of East Alabama" },"cab140" : { "ID" : "cab140", "websiteURL" : "http://espn.go.com", "displayName" : "Cable TV of Stanton" },"cableamerica" : { "ID" : "cableamerica", "websiteURL" : "http://espn.go.com", "displayName" : "CableAmerica" },"weh010-camtel" : { "ID" : "weh010-camtel", "websiteURL" : "http://espn.go.com", "displayName" : "Cam-Tel Company" },"hayneville" : { "ID" : "hayneville", "websiteURL" : "http://espn.go.com", "displayName" : "Camellia Communications - Hayneville Telephone" },"car030" : { "ID" : "car030", "websiteURL" : "http://espn.go.com", "displayName" : "Cameron Communications" },"canbytel" : { "ID" : "canbytel", "websiteURL" : "http://espn.go.com", "displayName" : "Canby Telcom" },"crt020" : { "ID" : "crt020", "websiteURL" : "http://espn.go.com", "displayName" : "CapRock Tv" },"car050" : { "ID" : "car050", "websiteURL" : "http://espn.go.com", "displayName" : "Carnegie Cable" },"cas" : { "ID" : "cas", "websiteURL" : "http://espn.go.com", "displayName" : "CAS Cable" },"casscomm" : { "ID" : "casscomm", "websiteURL" : "http://espn.go.com", "displayName" : "CASSCOMM" },"cccomm" : { "ID" : "cccomm", "websiteURL" : "http://espn.go.com", "displayName" : "CC Communications" },"nttccde010" : { "ID" : "nttccde010", "websiteURL" : "http://espn.go.com", "displayName" : "CDE Lightband" },"cfunet" : { "ID" : "cfunet", "websiteURL" : "http://espn.go.com", "displayName" : "Cedar Falls Utilities" },"dem010-01" : { "ID" : "dem010-01", "websiteURL" : "http://espn.go.com", "displayName" : "Celect-Bloomer Telephone Area" },"dem010-02" : { "ID" : "dem010-02", "websiteURL" : "http://espn.go.com", "displayName" : "Celect-Bruce Telephone Area" },"dem010-03" : { "ID" : "dem010-03", "websiteURL" : "http://espn.go.com", "displayName" : "Celect-Citizens Connected Area" },"dem010-04" : { "ID" : "dem010-04", "websiteURL" : "http://espn.go.com", "displayName" : "Celect-Elmwood Spring Valley Area" },"dem010-06" : { "ID" : "dem010-06", "websiteURL" : "http://espn.go.com", "displayName" : "Celect-Mosaic Telecom" },"dem010-05" : { "ID" : "dem010-05", "websiteURL" : "http://espn.go.com", "displayName" : "Celect-West WI Telephone Area" },"cen100" : { "ID" : "cen100", "websiteURL" : "http://espn.go.com", "displayName" : "CentraCom" },"nttccst010" : { "ID" : "nttccst010", "websiteURL" : "http://espn.go.com", "displayName" : "Central Scott / CSTV" },"auth_centurylink_net" : { "ID" : "auth_centurylink_net", "websiteURL" : "http://www.centurylink.net", "displayName" : "CenturyLink Prism" },"cha035" : { "ID" : "cha035", "websiteURL" : "http://espn.go.com", "displayName" : "Chaparral CableVision" },"cha050" : { "ID" : "cha050", "websiteURL" : "http://espn.go.com", "displayName" : "Chariton Valley Communication Corporation, Inc." },"cha060" : { "ID" : "cha060", "websiteURL" : "http://espn.go.com", "displayName" : "Chatmoss Cablevision" },"nttcche010" : { "ID" : "nttcche010", "websiteURL" : "http://espn.go.com", "displayName" : "Cherokee Communications" },"che050" : { "ID" : "che050", "websiteURL" : "http://espn.go.com", "displayName" : "Chesapeake Bay Communications" },"cimtel" : { "ID" : "cimtel", "websiteURL" : "http://espn.go.com", "displayName" : "Cim-Tel Cable, LLC." },"CBT" : { "ID" : "CBT", "websiteURL" : "http://espn.go.com", "displayName" : "Cincinnati Bell Fioptics" },"cit180" : { "ID" : "cit180", "websiteURL" : "http://espn.go.com", "displayName" : "Citizens Cablevision - Floyd, VA" },"cit210" : { "ID" : "cit210", "websiteURL" : "http://espn.go.com", "displayName" : "Citizens Cablevision, Inc." },"cit040" : { "ID" : "cit040", "websiteURL" : "http://espn.go.com", "displayName" : "Citizens Fiber" },"cit250" : { "ID" : "cit250", "websiteURL" : "http://espn.go.com", "displayName" : "Citizens Mutual" },"war040" : { "ID" : "war040", "websiteURL" : "http://espn.go.com", "displayName" : "Citizens Telephone Corporation" },"wat025" : { "ID" : "wat025", "websiteURL" : "http://espn.go.com", "displayName" : "City Of Monroe" },"wadsworth" : { "ID" : "wadsworth", "websiteURL" : "http://espn.go.com", "displayName" : "CityLink" },"nor100" : { "ID" : "nor100", "websiteURL" : "http://espn.go.com", "displayName" : "CL Tel" },"cla010" : { "ID" : "cla010", "websiteURL" : "http://espn.go.com", "displayName" : "Clarence Telephone and Cedar Communications" },"ser060" : { "ID" : "ser060", "websiteURL" : "http://espn.go.com", "displayName" : "Clear Choice Communications" },"CLEARCREEK" : { "ID" : "CLEARCREEK", "websiteURL" : "http://espn.go.com", "displayName" : "Clear Creek" },"clickcabletv_auth-gateway_net" : { "ID" : "clickcabletv_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Click! Cable TV" },"war020" : { "ID" : "war020", "websiteURL" : "www.click1.net", "displayName" : "CLICK1.NET" },"cml010" : { "ID" : "cml010", "websiteURL" : "http://espn.go.com", "displayName" : "CML Telephone Cooperative Association" },"cns" : { "ID" : "cns", "websiteURL" : "http://espn.go.com", "displayName" : "CNS" },"com160" : { "ID" : "com160", "websiteURL" : "http://espn.go.com", "displayName" : "Co-Mo Connect" },"coa020" : { "ID" : "coa020", "websiteURL" : "http://espn.go.com", "displayName" : "Coast Communications" },"coa030" : { "ID" : "coa030", "websiteURL" : "http://espn.go.com", "displayName" : "Coaxial Cable TV" },"mid055" : { "ID" : "mid055", "websiteURL" : "http://espn.go.com", "displayName" : "Cobalt TV (Mid-State Community TV)" },"col090" : { "ID" : "col090", "websiteURL" : "http://espn.go.com", "displayName" : "Colo Telephone Company" },"col070" : { "ID" : "col070", "websiteURL" : "http://espn.go.com", "displayName" : "Columbia Power & Water Systems" },"col080" : { "ID" : "col080", "websiteURL" : "http://espn.go.com", "displayName" : "Columbus Telephone" },"wbi010" : { "ID" : "wbi010", "websiteURL" : "http://espn.go.com", "displayName" : "ComLink" },"nor105" : { "ID" : "nor105", "websiteURL" : "http://espn.go.com", "displayName" : "Communications 1 Cablevision, Inc." },"com150" : { "ID" : "com150", "websiteURL" : "http://espn.go.com", "displayName" : "Community Cable & Broadband" },"com020" : { "ID" : "com020", "websiteURL" : "http://espn.go.com", "displayName" : "Community Communications Company" },"coy010" : { "ID" : "coy010", "websiteURL" : "http://espn.go.com", "displayName" : "commZoom" },"cat020" : { "ID" : "cat020", "websiteURL" : "http://espn.go.com", "displayName" : "Comporium" },"com071" : { "ID" : "com071", "websiteURL" : "http://espn.go.com", "displayName" : "ComSouth Telesys" },"consolidatedcable" : { "ID" : "consolidatedcable", "websiteURL" : "http://espn.go.com", "displayName" : "Consolidated" },"consolidated_auth-gateway_net" : { "ID" : "consolidated_auth-gateway_net", "websiteURL" : "http://mycci.net", "displayName" : "Consolidated Communications" },"conwaycorp" : { "ID" : "conwaycorp", "websiteURL" : "http://espn.go.com", "displayName" : "Conway Corporation " },"coo050" : { "ID" : "coo050", "websiteURL" : "http://espn.go.com", "displayName" : "Coon Valley Telecommunications Inc" },"cra010" : { "ID" : "cra010", "websiteURL" : "http://espn.go.com", "displayName" : "Craw-Kan Telephone" },"crestview" : { "ID" : "crestview", "websiteURL" : "http://espn.go.com", "displayName" : "Crestview Cable Communications" },"cross" : { "ID" : "cross", "websiteURL" : "http://espn.go.com", "displayName" : "Cross TV" },"cro030" : { "ID" : "cro030", "websiteURL" : "http://espn.go.com", "displayName" : "Crosslake Communications" },"ctc040" : { "ID" : "ctc040", "websiteURL" : "www.ctctelcom.net", "displayName" : "CTC - Brainerd MN" },"cun010" : { "ID" : "cun010", "websiteURL" : "http://espn.go.com", "displayName" : "Cunningham Telephone & Cable" },"dpc010" : { "ID" : "dpc010", "websiteURL" : "http://espn.go.com", "displayName" : "D & P Communications" },"dak030" : { "ID" : "dak030", "websiteURL" : "http://espn.go.com", "displayName" : "Dakota Central Telecommunications" },"nttcdel010" : { "ID" : "nttcdel010", "websiteURL" : "http://espn.go.com", "displayName" : "Delcambre Telephone LLC" },"tel160-del" : { "ID" : "tel160-del", "websiteURL" : "http://espn.go.com", "displayName" : "Delta Telephone Company" },"sal040" : { "ID" : "sal040", "websiteURL" : "http://espn.go.com", "displayName" : "DiamondNet" },"ind060-dc" : { "ID" : "ind060-dc", "websiteURL" : "http://espn.go.com", "displayName" : "Direct Communications Cable" },"GUAM" : { "ID" : "GUAM", "websiteURL" : "http://espn.go.com", "displayName" : "Docomo Pacific" },"doy010" : { "ID" : "doy010", "websiteURL" : "http://espn.go.com", "displayName" : "Doylestown Cable TV" },"dtc020" : { "ID" : "dtc020", "websiteURL" : "http://espn.go.com", "displayName" : "DTC" },"dtc010" : { "ID" : "dtc010", "websiteURL" : "http://espn.go.com", "displayName" : "DTC Cable (Delhi)" },"dum010" : { "ID" : "dum010", "websiteURL" : "http://espn.go.com", "displayName" : "Dumont Telephone Company" },"dun010" : { "ID" : "dun010", "websiteURL" : "http://espn.go.com", "displayName" : "Dunkerton Telephone Cooperative" },"cci010" : { "ID" : "cci010", "websiteURL" : "http://espn.go.com", "displayName" : "Duo County Telecom" },"eagle" : { "ID" : "eagle", "websiteURL" : "http://espn.go.com", "displayName" : "Eagle Communications" },"weh010-east" : { "ID" : "weh010-east", "websiteURL" : "http://espn.go.com", "displayName" : "East Arkansas Cable TV" },"easton-utilities" : { "ID" : "easton-utilities", "websiteURL" : "http://espn.go.com", "displayName" : "Easton Utilities" },"eatel" : { "ID" : "eatel", "websiteURL" : "http://espn.go.com", "displayName" : "EATEL Video, LLC" },"ell010" : { "ID" : "ell010", "websiteURL" : "http://espn.go.com", "displayName" : "ECTA" },"emerytelcom" : { "ID" : "emerytelcom", "websiteURL" : "http://espn.go.com", "displayName" : "Emery Telcom Video LLC" },"nor200" : { "ID" : "nor200", "websiteURL" : "http://espn.go.com", "displayName" : "Empire Access" },"endeavor" : { "ID" : "endeavor", "websiteURL" : "http://espn.go.com", "displayName" : "Endeavor Communications" },"sun045" : { "ID" : "sun045", "websiteURL" : "http://espn.go.com", "displayName" : "Enhanced Telecommunications Corporation" },"mid030" : { "ID" : "mid030", "websiteURL" : "http://espn.go.com", "displayName" : "EnTouch" },"enventis_auth-gateway_net" : { "ID" : "enventis_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Enventis" },"epb_auth-gateway_net" : { "ID" : "epb_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "EPB Fiber Optics" },"epb020" : { "ID" : "epb020", "websiteURL" : "http://espn.go.com", "displayName" : "EPB Smarnet" },"jea010" : { "ID" : "jea010", "websiteURL" : "http://eplusbroadband.com", "displayName" : "EPlus Broadband" },"com065" : { "ID" : "com065", "websiteURL" : "http://espn.go.com", "displayName" : "ETC" },"ete010" : { "ID" : "ete010", "websiteURL" : "http://espn.go.com", "displayName" : "Etex Communications" },"fbc-tele" : { "ID" : "fbc-tele", "websiteURL" : "http://espn.go.com", "displayName" : "F&B Communications" },"fal010" : { "ID" : "fal010", "websiteURL" : "http://espn.go.com", "displayName" : "Falcon Broadband" },"fam010" : { "ID" : "fam010", "websiteURL" : "http://espn.go.com", "displayName" : "FamilyView CableVision" },"far020" : { "ID" : "far020", "websiteURL" : "http://espn.go.com", "displayName" : "Farmers Mutual Telephone Co. (Stanton, IA)" },"fay010" : { "ID" : "fay010", "websiteURL" : "http://espn.go.com", "displayName" : "Fayetteville Public Utilities" },"sal060" : { "ID" : "sal060", "websiteURL" : "http://espn.go.com", "displayName" : "Fibrant" },"fid010" : { "ID" : "fid010", "websiteURL" : "http://espn.go.com", "displayName" : "Fidelity Communications" },"fli020" : { "ID" : "fli020", "websiteURL" : "http://espn.go.com", "displayName" : "Flint River Communications" },"foo010" : { "ID" : "foo010", "websiteURL" : "http://espn.go.com", "displayName" : "Foothills Broadband" },"fbcomm" : { "ID" : "fbcomm", "websiteURL" : "http://espn.go.com", "displayName" : "Frankfort Plant Board" },"tel160-fra" : { "ID" : "tel160-fra", "websiteURL" : "http://espn.go.com", "displayName" : "Franklin Telephone Company" },"FRONTIER" : { "ID" : "FRONTIER", "websiteURL" : "http://frontier.com/", "displayName" : "Frontier Communications" },"nttcftc010" : { "ID" : "nttcftc010", "websiteURL" : "http://espn.go.com", "displayName" : "FTC" },"farmerstel" : { "ID" : "farmerstel", "websiteURL" : "http://espn.go.com", "displayName" : "FTCtv" },"fullchannel" : { "ID" : "fullchannel", "websiteURL" : "http://espn.go.com", "displayName" : "Full Channel, Inc." },"gardenvalley" : { "ID" : "gardenvalley", "websiteURL" : "http://espn.go.com", "displayName" : "Garden Valley-GVTV" },"gar040" : { "ID" : "gar040", "websiteURL" : "http://espn.go.com", "displayName" : "Gardonville Cooperative Telephone Association" },"gbt010" : { "ID" : "gbt010", "websiteURL" : "http://espn.go.com", "displayName" : "GBT Communications, Inc." },"gci_auth-gateway_net" : { "ID" : "gci_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "GCI" },"clr010" : { "ID" : "clr010", "websiteURL" : "http://espn.go.com", "displayName" : "Giant Communications" },"gla010" : { "ID" : "gla010", "websiteURL" : "http://espn.go.com", "displayName" : "Glasgow Electric Plant Board" },"gle010" : { "ID" : "gle010", "websiteURL" : "http://espn.go.com", "displayName" : "Glenwood Telecommunications LLC." },"gra060" : { "ID" : "gra060", "websiteURL" : "http://espn.go.com", "displayName" : "GLW Broadband" },"goldenwest" : { "ID" : "goldenwest", "websiteURL" : "http://espn.go.com", "displayName" : "Golden West Cablevision" },"GoogleFiber" : { "ID" : "GoogleFiber", "websiteURL" : "https://fiber.google.com/about/", "displayName" : "Google Fiber " },"Grande" : { "ID" : "Grande", "websiteURL" : "http://grandecom.com", "displayName" : "Grande Communications" },"gpcom" : { "ID" : "gpcom", "websiteURL" : "http://espn.go.com", "displayName" : "Great Plains Communications" },"con020" : { "ID" : "con020", "websiteURL" : "http://espn.go.com", "displayName" : "GreatWave Communications" },"GREENLIGHT" : { "ID" : "GREENLIGHT", "websiteURL" : "http://espn.go.com", "displayName" : "Greenlight" },"gri010" : { "ID" : "gri010", "websiteURL" : "http://espn.go.com", "displayName" : "Gridley Cable Inc" },"gta_auth-gateway_net" : { "ID" : "gta_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "GTA " },"grafton" : { "ID" : "grafton", "websiteURL" : "http://espn.go.com", "displayName" : "GTI TV" },"gvtc_auth-gateway_net" : { "ID" : "gvtc_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "GVTC" },"hbc010" : { "ID" : "hbc010", "websiteURL" : "http://espn.go.com", "displayName" : "H&B Cable Services" },"hae010" : { "ID" : "hae010", "websiteURL" : "http://espn.go.com", "displayName" : "Haefele TV Inc." },"htc010" : { "ID" : "htc010", "websiteURL" : "http://espn.go.com", "displayName" : "Halstad Telephone Company" },"hargray_auth-gateway_net" : { "ID" : "hargray_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Hargray" },"har005" : { "ID" : "har005", "websiteURL" : "http://espn.go.com", "displayName" : "Harlan Municipal Utilities" },"har020" : { "ID" : "har020", "websiteURL" : "http://espn.go.com", "displayName" : "Hart Communications, Inc." },"auth_hawaiiantel_net" : { "ID" : "auth_hawaiiantel_net", "websiteURL" : "http://espn.go.com", "displayName" : "Hawaiian Telcom" },"hbc_auth-gateway_net" : { "ID" : "hbc_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "HBC " },"hea040" : { "ID" : "hea040", "websiteURL" : "http://espn.go.com", "displayName" : "Heart of Iowa Communications Cooperative" },"htc020" : { "ID" : "htc020", "websiteURL" : "http://espn.go.com", "displayName" : "Hickory Telephone Company" },"nttchig010" : { "ID" : "nttchig010", "websiteURL" : "http://espn.go.com", "displayName" : "Highland Communication Services" },"spc010" : { "ID" : "spc010", "websiteURL" : "http://espn.go.com", "displayName" : "Hilliary Communications" },"hin020" : { "ID" : "hin020", "websiteURL" : "http://espn.go.com", "displayName" : "Hinton CATV Co." },"hometelecom_auth-gateway_net" : { "ID" : "hometelecom_auth-gateway_net", "websiteURL" : "http:/homesc.com/internet", "displayName" : "Home Telecom" },"hometowncable_auth-gateway_net" : { "ID" : "hometowncable_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Home Town Cable" },"hometel" : { "ID" : "hometel", "websiteURL" : "http://espn.go.com", "displayName" : "HomeTel Entertainment, Inc." },"hoodcanal" : { "ID" : "hoodcanal", "websiteURL" : "http://espn.go.com", "displayName" : "Hood Canal Communications" },"weh010-hope" : { "ID" : "weh010-hope", "websiteURL" : "http://espn.go.com", "displayName" : "Hope - Prescott Cable TV" },"horizoncable" : { "ID" : "horizoncable", "websiteURL" : "http://espn.go.com", "displayName" : "Horizon Cable TV, Inc." },"hotwirecommunications_auth-gateway_net" : { "ID" : "hotwirecommunications_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Hotwire Communications" },"htc030" : { "ID" : "htc030", "websiteURL" : "http://espn.go.com", "displayName" : "HTC Communications Co. - IL" },"harrison-telco" : { "ID" : "harrison-telco", "websiteURL" : "http://espn.go.com", "displayName" : "HTC Communications Co. TV" },"htccomm" : { "ID" : "htccomm", "websiteURL" : "http://espn.go.com", "displayName" : "HTC Communications, Inc. - IA" },"HTC" : { "ID" : "HTC", "websiteURL" : "http://espn.go.com", "displayName" : "HTC Digital Cable" },"wal005" : { "ID" : "wal005", "websiteURL" : "http://espn.go.com", "displayName" : "Huxley Communications" },"imon" : { "ID" : "imon", "websiteURL" : "http://espn.go.com", "displayName" : "ImOn Communications" },"ind040" : { "ID" : "ind040", "websiteURL" : "http://espn.go.com", "displayName" : "Independence Telecommunications" },"rrc010" : { "ID" : "rrc010", "websiteURL" : "http://espn.go.com", "displayName" : "Inland Networks" },"stc020" : { "ID" : "stc020", "websiteURL" : "http://espn.go.com", "displayName" : "Innovative Cable TV St Croix" },"car100" : { "ID" : "car100", "websiteURL" : "http://espn.go.com", "displayName" : "Innovative Cable TV St Thomas-St John" },"icc010" : { "ID" : "icc010", "websiteURL" : "http://espn.go.com", "displayName" : "Inside Connect Cable" },"intrmtncable" : { "ID" : "intrmtncable", "websiteURL" : "http://espn.go.com", "displayName" : "Inter Mountain Cable " },"int050" : { "ID" : "int050", "websiteURL" : "http://espn.go.com", "displayName" : "Interstate Telecommunications Coop" },"irv010" : { "ID" : "irv010", "websiteURL" : "http://espn.go.com", "displayName" : "Irvine Cable" },"itv-bitwise" : { "ID" : "itv-bitwise", "websiteURL" : "http://espn.go.com", "displayName" : "ITV-3" },"k2c010" : { "ID" : "k2c010", "websiteURL" : "http://espn.go.com", "displayName" : "K2 Communications" },"kal010" : { "ID" : "kal010", "websiteURL" : "http://espn.go.com", "displayName" : "Kalida Telephone Company, Inc." },"kal030" : { "ID" : "kal030", "websiteURL" : "http://espn.go.com", "displayName" : "Kalona Cooperative Telephone Company" },"kmt010" : { "ID" : "kmt010", "websiteURL" : "http://espn.go.com", "displayName" : "KMTelecom" },"kpu010" : { "ID" : "kpu010", "websiteURL" : "http://espn.go.com", "displayName" : "KPU Telecommunications" },"kuh010" : { "ID" : "kuh010", "websiteURL" : "http://espn.go.com", "displayName" : "Kuhn Communications Inc." },"lak130" : { "ID" : "lak130", "websiteURL" : "http://espn.go.com", "displayName" : "Lakeland Communications" },"lan010" : { "ID" : "lan010", "websiteURL" : "http://espn.go.com", "displayName" : "LangCo" },"lau020" : { "ID" : "lau020", "websiteURL" : "http://espn.go.com", "displayName" : "Laurel Highland Total Communications" },"liberty-cable" : { "ID" : "liberty-cable", "websiteURL" : "http://espn.go.com", "displayName" : "Liberty Cablevision of PR" },"bra010" : { "ID" : "bra010", "websiteURL" : "http://espn.go.com", "displayName" : "Limestone Cable / Bracken Cable" },"lit020" : { "ID" : "lit020", "websiteURL" : "http://espn.go.com", "displayName" : "Litestream" },"tel140" : { "ID" : "tel140", "websiteURL" : "http://espn.go.com", "displayName" : "LivCom" },"loc010" : { "ID" : "loc010", "websiteURL" : "http://espn.go.com", "displayName" : "LocalTel Communications" },"longlines_auth-gateway_net" : { "ID" : "longlines_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Long Lines" },"weh010-longview" : { "ID" : "weh010-longview", "websiteURL" : "http://espn.go.com", "displayName" : "Longview - Kilgore Cable TV" },"lns010" : { "ID" : "lns010", "websiteURL" : "http://espn.go.com", "displayName" : "Lost Nation-Elwood Telephone Co." },"nttclpc010" : { "ID" : "nttclpc010", "websiteURL" : "http://espn.go.com", "displayName" : "LPC Connect" },"lumos" : { "ID" : "lumos", "websiteURL" : "http://espn.go.com", "displayName" : "Lumos Networks" },"lus-fiber" : { "ID" : "lus-fiber", "websiteURL" : "http://espn.go.com", "displayName" : "LUS Fiber TV" },"madison" : { "ID" : "madison", "websiteURL" : "http://espn.go.com", "displayName" : "Madison Communications" },"mad030" : { "ID" : "mad030", "websiteURL" : "http://espn.go.com", "displayName" : "Madison County Cable Inc." },"nttcmah010" : { "ID" : "nttcmah010", "websiteURL" : "http://espn.go.com", "displayName" : "Mahaska Communication Group" },"mar010" : { "ID" : "mar010", "websiteURL" : "http://espn.go.com", "displayName" : "Marne & Elk Horn Telephone Company" },"MAXXSOUTH" : { "ID" : "MAXXSOUTH", "websiteURL" : "http://espn.go.com", "displayName" : "MaxxSouth" },"mcc040" : { "ID" : "mcc040", "websiteURL" : "http://www.mccluretelephone.com/television", "displayName" : "McClure Telephone Company" },"mctv" : { "ID" : "mctv", "websiteURL" : "http://espn.go.com", "displayName" : "MCTV" },"merrimac" : { "ID" : "merrimac", "websiteURL" : "http://espn.go.com", "displayName" : "Merrimac Communications Ltd." },"auth_metrocast_net" : { "ID" : "auth_metrocast_net", "websiteURL" : "http://portal.metrocast.net/", "displayName" : "MetroCast" },"metronet" : { "ID" : "metronet", "websiteURL" : "http://espn.go.com", "displayName" : "MetroNet" },"mhtc" : { "ID" : "mhtc", "websiteURL" : "http://espn.go.com", "displayName" : "MHTC" },"MICONNECTION" : { "ID" : "MICONNECTION", "websiteURL" : "http://espn.go.com", "displayName" : "MI-Connection" },"midhudson" : { "ID" : "midhudson", "websiteURL" : "http://espn.go.com", "displayName" : "Mid-Hudson Cable" },"midrivers" : { "ID" : "midrivers", "websiteURL" : "http://espn.go.com", "displayName" : "Mid-Rivers Communications" },"msauth_midco_net" : { "ID" : "msauth_midco_net", "websiteURL" : "http://www.midcocomm.com", "displayName" : "Midco" },"mid045" : { "ID" : "mid045", "websiteURL" : "http://espn.go.com", "displayName" : "Midstate Communications" },"mil080" : { "ID" : "mil080", "websiteURL" : "http://espn.go.com", "displayName" : "Milford Communications" },"nttcmin010" : { "ID" : "nttcmin010", "websiteURL" : "http://espn.go.com", "displayName" : "Minford TV" },"san040-02" : { "ID" : "san040-02", "websiteURL" : "http://espn.go.com", "displayName" : "Mitchell Telecom" },"mlg010" : { "ID" : "mlg010", "websiteURL" : "http://espn.go.com", "displayName" : "MLGC" },"morrisbroadband_auth-gateway_net" : { "ID" : "morrisbroadband_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Morris Broadband" },"mou110" : { "ID" : "mou110", "websiteURL" : "http://espn.go.com", "displayName" : "Mountain Telephone" },"mtacomm" : { "ID" : "mtacomm", "websiteURL" : "http://espn.go.com", "displayName" : "MTA Communications, LLC" },"mtc010" : { "ID" : "mtc010", "websiteURL" : "http://espn.go.com", "displayName" : "MTC Cable" },"med040" : { "ID" : "med040", "websiteURL" : "http://espn.go.com", "displayName" : "MTC Technologies" },"man060" : { "ID" : "man060", "websiteURL" : "http://espn.go.com", "displayName" : "MTCC" },"mtc030" : { "ID" : "mtc030", "websiteURL" : "http://espn.go.com", "displayName" : "MTCO Communications" },"mul050" : { "ID" : "mul050", "websiteURL" : "http://espn.go.com", "displayName" : "Mulberry Telephone Company" },"mur010" : { "ID" : "mur010", "websiteURL" : "http://espn.go.com", "displayName" : "Murray Electric System" },"musfiber" : { "ID" : "musfiber", "websiteURL" : "http://espn.go.com", "displayName" : "MUS FiberNET" },"mpw" : { "ID" : "mpw", "websiteURL" : "http://espn.go.com", "displayName" : "Muscatine Power and Water" },"nttcsli010" : { "ID" : "nttcsli010", "websiteURL" : "http://espn.go.com", "displayName" : "myEVTV.com" },"nor260" : { "ID" : "nor260", "websiteURL" : "www.gondtc.com", "displayName" : "NDTC" },"nctc" : { "ID" : "nctc", "websiteURL" : "http://espn.go.com", "displayName" : "Nebraska Central Telecom, Inc." },"nel020" : { "ID" : "nel020", "websiteURL" : "http://espn.go.com", "displayName" : "Nelsonville TV Cable" },"nem010" : { "ID" : "nem010", "websiteURL" : "http://espn.go.com", "displayName" : "Nemont Communications Inc" },"new075" : { "ID" : "new075", "websiteURL" : "www.nhtc.coop", "displayName" : "New Hope Telephone Cooperative" },"nwcable_auth-gateway_net" : { "ID" : "nwcable_auth-gateway_net", "websiteURL" : "http://www.nwcable.net", "displayName" : "NewWave Communications" },"nextech_auth-gateway_net" : { "ID" : "nextech_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Nex-Tech" },"nor240" : { "ID" : "nor240", "websiteURL" : "http://espn.go.com", "displayName" : "NICP" },"cic010" : { "ID" : "cic010", "websiteURL" : "http://espn.go.com", "displayName" : "NineStar Connect" },"nktelco" : { "ID" : "nktelco", "websiteURL" : "http://espn.go.com", "displayName" : "NKTelco" },"nntccencom" : { "ID" : "nntccencom", "websiteURL" : "http://espn.go.com", "displayName" : "NNTV" },"nortex" : { "ID" : "nortex", "websiteURL" : "http://espn.go.com", "displayName" : "Nortex Communications" },"nor140" : { "ID" : "nor140", "websiteURL" : "http://espn.go.com", "displayName" : "North Central Telephone Cooperative" },"NORTHSTATE" : { "ID" : "NORTHSTATE", "websiteURL" : "http://espn.go.com", "displayName" : "North State" },"nor030" : { "ID" : "nor030", "websiteURL" : "http://espn.go.com", "displayName" : "Northland Communications" },"nor075" : { "ID" : "nor075", "websiteURL" : "http://espn.go.com", "displayName" : "Northwest Communications" },"nor125" : { "ID" : "nor125", "websiteURL" : "http://espn.go.com", "displayName" : "Norwood Light Broadband" },"net010" : { "ID" : "net010", "websiteURL" : "http://espn.go.com", "displayName" : "Nsight Telservices" },"dur010" : { "ID" : "dur010", "websiteURL" : "http://espn.go.com", "displayName" : "Ntec" },"new045" : { "ID" : "new045", "websiteURL" : "http://espn.go.com", "displayName" : "NU-Telecom" },"nulink" : { "ID" : "nulink", "websiteURL" : "http://espn.go.com", "displayName" : "Nulink" },"jam030" : { "ID" : "jam030", "websiteURL" : "http://espn.go.com", "displayName" : "NVC" },"far035" : { "ID" : "far035", "websiteURL" : "www.omnitel.biz", "displayName" : "OmniTel Communications" },"onesource" : { "ID" : "onesource", "websiteURL" : "http://espn.go.com", "displayName" : "OneSource Communications" },"cit230" : { "ID" : "cit230", "websiteURL" : "http://www.opelikapower.com", "displayName" : "Opelika Power Services" },"openband_auth-gateway_net" : { "ID" : "openband_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "OpenBand" },"daltonutilities" : { "ID" : "daltonutilities", "websiteURL" : "http://espn.go.com", "displayName" : "Optilink" },"mid140" : { "ID" : "mid140", "websiteURL" : "http://espn.go.com", "displayName" : "OPTURA" },"ORBITEL" : { "ID" : "ORBITEL", "websiteURL" : "http://espn.go.com", "displayName" : "Orbitel" },"ote010" : { "ID" : "ote010", "websiteURL" : "http://espn.go.com", "displayName" : "OTEC Communication Company" },"cci020" : { "ID" : "cci020", "websiteURL" : "http://espn.go.com", "displayName" : "Packerland Broadband" },"palmetto" : { "ID" : "palmetto", "websiteURL" : "http://espn.go.com", "displayName" : "Palmetto Rural Telephone Cooperative" },"pan010" : { "ID" : "pan010", "websiteURL" : "http://espn.go.com", "displayName" : "Panora Telco/Guthrie Center Communications" },"otter" : { "ID" : "otter", "websiteURL" : "http://espn.go.com", "displayName" : "Park Region Telephone & Otter Tail Telcom" },"mid050" : { "ID" : "mid050", "websiteURL" : "http://espn.go.com", "displayName" : "PARTNER COMMUNICATIONS INC." },"paulbunyan" : { "ID" : "paulbunyan", "websiteURL" : "http://espn.go.com", "displayName" : "Paul Bunyan Communications" },"pem020" : { "ID" : "pem020", "websiteURL" : "http://espn.go.com", "displayName" : "Pembroke Telephone Company" },"mck010" : { "ID" : "mck010", "websiteURL" : "http://espn.go.com", "displayName" : "Peoples Rural Telephone Cooperative" },"pul010" : { "ID" : "pul010", "websiteURL" : "http://espn.go.com", "displayName" : "PES Energize" },"phi010" : { "ID" : "phi010", "websiteURL" : "http://espn.go.com", "displayName" : "Philippi Communications System" },"phonoscope" : { "ID" : "phonoscope", "websiteURL" : "http://espn.go.com", "displayName" : "Phonoscope Cable" },"pin070" : { "ID" : "pin070", "websiteURL" : "http://espn.go.com", "displayName" : "Pine Belt Communications, Inc." },"weh010-pine" : { "ID" : "weh010-pine", "websiteURL" : "http://espn.go.com", "displayName" : "Pine Bluff Cable TV" },"pin060" : { "ID" : "pin060", "websiteURL" : "http://www.pineland.net/", "displayName" : "Pineland Telephone Cooperative, Inc." },"cam010" : { "ID" : "cam010", "websiteURL" : "http://espn.go.com", "displayName" : "Pinpoint Communications" },"pioncomm" : { "ID" : "pioncomm", "websiteURL" : "http://espn.go.com", "displayName" : "Pioneer Communications" },"pioneer" : { "ID" : "pioneer", "websiteURL" : "http://espn.go.com", "displayName" : "Pioneer DTV" },"plateau" : { "ID" : "plateau", "websiteURL" : "http://espn.go.com", "displayName" : "Plateau Telecommunications TV" },"sony_auth-gateway_net" : { "ID" : "sony_auth-gateway_net", "websiteURL" : "http://www.playstationnetwork.com/vue", "displayName" : "PlayStation Vue" },"par010" : { "ID" : "par010", "websiteURL" : "http://espn.go.com", "displayName" : "PLWC" },"pro035" : { "ID" : "pro035", "websiteURL" : "http://espn.go.com", "displayName" : "PMT" },"vik011" : { "ID" : "vik011", "websiteURL" : "http://espn.go.com", "displayName" : "Polar Cablevision" },"pottawatomie" : { "ID" : "pottawatomie", "websiteURL" : "http://espn.go.com", "displayName" : "Pottawatomie Telephone Co." },"premiercomm" : { "ID" : "premiercomm", "websiteURL" : "http://espn.go.com", "displayName" : "Premier Communications" },"psc010" : { "ID" : "psc010", "websiteURL" : "http://espn.go.com", "displayName" : "PSC" },"pan020" : { "ID" : "pan020", "websiteURL" : "http://espn.go.com", "displayName" : "PTCI" },"qco010" : { "ID" : "qco010", "websiteURL" : "http://espn.go.com", "displayName" : "QCOL" },"qua010" : { "ID" : "qua010", "websiteURL" : "http://espn.go.com", "displayName" : "Quality Cablevision" },"rad010" : { "ID" : "rad010", "websiteURL" : "http://espn.go.com", "displayName" : "Radcliffe Telephone Company" },"car040" : { "ID" : "car040", "websiteURL" : "http://espn.go.com", "displayName" : "Rainbow Communications" },"rai030" : { "ID" : "rai030", "websiteURL" : "http://espn.go.com", "displayName" : "Rainier Connect" },"ral010" : { "ID" : "ral010", "websiteURL" : "http://espn.go.com", "displayName" : "Ralls Technologies" },"randolph" : { "ID" : "randolph", "websiteURL" : "http://espn.go.com", "displayName" : "Randolph Telephone TV" },"rct010" : { "ID" : "rct010", "websiteURL" : "http://espn.go.com", "displayName" : "RC Technologies" },"RCN" : { "ID" : "RCN", "websiteURL" : "http://www.rcn.com", "displayName" : "RCN" },"red040" : { "ID" : "red040", "websiteURL" : "http://www.rrt.net", "displayName" : "Red River Rural Telephone Association" },"ree010" : { "ID" : "ree010", "websiteURL" : "http://espn.go.com", "displayName" : "Reedsburg Utility Commission" },"mol010" : { "ID" : "mol010", "websiteURL" : "http://espn.go.com", "displayName" : "Reliance Connects - Oregon" },"res020" : { "ID" : "res020", "websiteURL" : "http://espn.go.com", "displayName" : "Reserve Telecommunications" },"weh010-resort" : { "ID" : "weh010-resort", "websiteURL" : "http://espn.go.com", "displayName" : "Resort TV Cable" },"riv030" : { "ID" : "riv030", "websiteURL" : "http://espn.go.com", "displayName" : "River Valley Telecommunications Coop" },"rma" : { "ID" : "rma", "websiteURL" : "http://espn.go.com", "displayName" : "RMA Broadband & Cable TV" },"rockportcable" : { "ID" : "rockportcable", "websiteURL" : "http://espn.go.com", "displayName" : "Rock Port Cablevision" },"res040" : { "ID" : "res040", "websiteURL" : "http://espn.go.com", "displayName" : "RTC - Reservation Telephone Coop" },"rtc" : { "ID" : "rtc", "websiteURL" : "http://espn.go.com", "displayName" : "RTC Communication Corp" },"rte010" : { "ID" : "rte010", "websiteURL" : "http://espn.go.com", "displayName" : "RTEC Communications" },"stc010" : { "ID" : "stc010", "websiteURL" : "http://espn.go.com", "displayName" : "S&T" },"san040-01" : { "ID" : "san040-01", "websiteURL" : "http://espn.go.com", "displayName" : "Santel" },"sav010" : { "ID" : "sav010", "websiteURL" : "http://espn.go.com", "displayName" : "SCI Broadband-Savage Communications Inc." },"sco050" : { "ID" : "sco050", "websiteURL" : "http://www.scottsboropower.com", "displayName" : "Scottsboro Electric Power Board" },"selco" : { "ID" : "selco", "websiteURL" : "http://espn.go.com", "displayName" : "SELCO" },"service-electric-bb" : { "ID" : "service-electric-bb", "websiteURL" : "http://espn.go.com", "displayName" : "Service Electric Broadband" },"service-electric" : { "ID" : "service-electric", "websiteURL" : "http://espn.go.com", "displayName" : "Service Electric Cable TV and Communications - TV" },"serviceelectric_auth-gateway_net" : { "ID" : "serviceelectric_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "Service Electric Cablevision" },"she010" : { "ID" : "she010", "websiteURL" : "http://espn.go.com", "displayName" : "Shentel" },"she030" : { "ID" : "she030", "websiteURL" : "http://espn.go.com", "displayName" : "Sherwood Mutual Telephone Association, Inc." },"ind060-ssc" : { "ID" : "ind060-ssc", "websiteURL" : "http://espn.go.com", "displayName" : "Silver Star Communications" },"sjoberg" : { "ID" : "sjoberg", "websiteURL" : "http://espn.go.com", "displayName" : "Sjoberg's Inc." },"sou025" : { "ID" : "sou025", "websiteURL" : "http://www.sktmainstreet.com/", "displayName" : "SKT" },"sky050" : { "ID" : "sky050", "websiteURL" : "http://espn.go.com", "displayName" : "SkyBest TV" },"slingtv" : { "ID" : "slingtv", "websiteURL" : "https://sling.com", "displayName" : "Sling TV" },"nttcsmi010" : { "ID" : "nttcsmi010", "websiteURL" : "http://www.smithville.com", "displayName" : "Smithville Communications" },"woo010" : { "ID" : "woo010", "websiteURL" : "http://espn.go.com", "displayName" : "Solarus" },"sou075" : { "ID" : "sou075", "websiteURL" : "http://espn.go.com", "displayName" : "South Central Rural Telephone Cooperative" },"sou065" : { "ID" : "sou065", "websiteURL" : "http://espn.go.com", "displayName" : "South Holt Cablevision" },"sou035" : { "ID" : "sou035", "websiteURL" : "http://espn.go.com", "displayName" : "South Slope Cooperative Communications" },"spa020" : { "ID" : "spa020", "websiteURL" : "http://espn.go.com", "displayName" : "Spanish Fork Community Network" },"spe010" : { "ID" : "spe010", "websiteURL" : "http://espn.go.com", "displayName" : "Spencer Municipal Utilities" },"spi005" : { "ID" : "spi005", "websiteURL" : "http://espn.go.com", "displayName" : "Spillway Communications, Inc." },"srt010" : { "ID" : "srt010", "websiteURL" : "http://espn.go.com", "displayName" : "SRT Communications, Inc." },"sta025" : { "ID" : "sta025", "websiteURL" : "http://espn.go.com", "displayName" : "Star Communications" },"sco020" : { "ID" : "sco020", "websiteURL" : "http://espn.go.com", "displayName" : "STE" },"uin010" : { "ID" : "uin010", "websiteURL" : "http://espn.go.com", "displayName" : "STRATA Networks" },"summit-broadband" : { "ID" : "summit-broadband", "websiteURL" : "http://espn.go.com", "displayName" : "Summit Broadband " },"sum010" : { "ID" : "sum010", "websiteURL" : "http://espn.go.com", "displayName" : "Sumner Cable TV" },"pie010" : { "ID" : "pie010", "websiteURL" : "http://espn.go.com", "displayName" : "Surry TV PCSI TV" },"swa010" : { "ID" : "swa010", "websiteURL" : "http://espn.go.com", "displayName" : "Swayzee Communications" },"sweetwater" : { "ID" : "sweetwater", "websiteURL" : "http://espn.go.com", "displayName" : "Sweetwater Cable Television Co" },"swiftel" : { "ID" : "swiftel", "websiteURL" : "http://espn.go.com", "displayName" : "Swiftel" },"weh010-talequah" : { "ID" : "weh010-talequah", "websiteURL" : "http://espn.go.com", "displayName" : "Tahlequah Cable TV" },"tct" : { "ID" : "tct", "websiteURL" : "http://espn.go.com", "displayName" : "TCT West, Inc." },"tds_auth-gateway_net" : { "ID" : "tds_auth-gateway_net", "websiteURL" : "http://espn.go.com", "displayName" : "TDS" },"tel050" : { "ID" : "tel050", "websiteURL" : "http://espn.go.com", "displayName" : "Tele-Media Company" },"com050" : { "ID" : "com050", "websiteURL" : "http://espn.go.com", "displayName" : "The Community Agency" },"WatchABC" : { "ID" : "WatchABC", "websiteURL" : "http://espn.go.com", "displayName" : "The Walt Disney Company" },"tra010" : { "ID" : "tra010", "websiteURL" : "http://espn.go.com", "displayName" : "Trans-Video" },"tre010" : { "ID" : "tre010", "websiteURL" : "http://espn.go.com", "displayName" : "Trenton TV Cable Company" },"tcc" : { "ID" : "tcc", "websiteURL" : "http://espn.go.com", "displayName" : "Tri County Communications Cooperative" },"tri025" : { "ID" : "tri025", "websiteURL" : "http://espn.go.com", "displayName" : "TriCounty Telecom" },"tri110" : { "ID" : "tri110", "websiteURL" : "http://espn.go.com", "displayName" : "TrioTel Communications, Inc." },"tro010" : { "ID" : "tro010", "websiteURL" : "http://espn.go.com", "displayName" : "Troy Cablevision, Inc." },"auth_truvista_net" : { "ID" : "auth_truvista_net", "websiteURL" : "http://espn.go.com", "displayName" : "TruVista " },"tsc" : { "ID" : "tsc", "websiteURL" : "http://espn.go.com", "displayName" : "TSC" },"cit220" : { "ID" : "cit220", "websiteURL" : "http://espn.go.com", "displayName" : "Tullahoma Utilities Board" },"tvc015" : { "ID" : "tvc015", "websiteURL" : "http://espn.go.com", "displayName" : "TVC Cable" },"cab180" : { "ID" : "cab180", "websiteURL" : "http://espn.go.com", "displayName" : "TVision" },"twi040" : { "ID" : "twi040", "websiteURL" : "http://espn.go.com", "displayName" : "Twin Lakes" },"tvtinc" : { "ID" : "tvtinc", "websiteURL" : "http://espn.go.com", "displayName" : "Twin Valley" },"uis010" : { "ID" : "uis010", "websiteURL" : "http://espn.go.com", "displayName" : "Union Telephone Company" },"unitedtel" : { "ID" : "unitedtel", "websiteURL" : "http://espn.go.com", "displayName" : "United Communications TV" },"uni110" : { "ID" : "uni110", "websiteURL" : "http://espn.go.com", "displayName" : "United Communications- TN" },"uni120" : { "ID" : "uni120", "websiteURL" : "http://espn.go.com", "displayName" : "United Services" },"uss020" : { "ID" : "uss020", "websiteURL" : "http://espn.go.com", "displayName" : "US Sonet" },"cab060" : { "ID" : "cab060", "websiteURL" : "http://espn.go.com", "displayName" : "USA Communications" },"she005" : { "ID" : "she005", "websiteURL" : "http://espn.go.com", "displayName" : "USA Communications/Shellsburg, IA" },"val040" : { "ID" : "val040", "websiteURL" : "http://espn.go.com", "displayName" : "Valley TeleCom Group" },"val025" : { "ID" : "val025", "websiteURL" : "http://espn.go.com", "displayName" : "Valley Telecommunications" },"val030" : { "ID" : "val030", "websiteURL" : "http://espn.go.com", "displayName" : "Valparaiso Broadband" },"valunet" : { "ID" : "valunet", "websiteURL" : "http://espn.go.com", "displayName" : "ValuNet" },"cla050" : { "ID" : "cla050", "websiteURL" : "http://espn.go.com", "displayName" : "Vast Broadband" },"sul015" : { "ID" : "sul015", "websiteURL" : "http://espn.go.com", "displayName" : "Venture Communications Cooperative, Inc." },"ver025" : { "ID" : "ver025", "websiteURL" : "http://espn.go.com", "displayName" : "Vernon Communications" },"weh010-vicksburg" : { "ID" : "weh010-vicksburg", "websiteURL" : "http://espn.go.com", "displayName" : "Vicksburg Video" },"vis070" : { "ID" : "vis070", "websiteURL" : "http://espn.go.com", "displayName" : "Vision Communications" },"volcanotel" : { "ID" : "volcanotel", "websiteURL" : "http://espn.go.com", "displayName" : "Volcano Vision, Inc." },"vol040-02" : { "ID" : "vol040-02", "websiteURL" : "http://espn.go.com", "displayName" : "VolFirst / BLTV" },"ver070" : { "ID" : "ver070", "websiteURL" : "http://espn.go.com", "displayName" : "VTel" },"nttcvtx010" : { "ID" : "nttcvtx010", "websiteURL" : "http://espn.go.com", "displayName" : "VTX1" },"bci010-02" : { "ID" : "bci010-02", "websiteURL" : "http://espn.go.com", "displayName" : "Vyve Broadband" },"wab020" : { "ID" : "wab020", "websiteURL" : "http://espn.go.com", "displayName" : "Wabash Mutual Telephone Company" },"waitsfield" : { "ID" : "waitsfield", "websiteURL" : "http://espn.go.com", "displayName" : "Waitsfield Cable" },"wal010" : { "ID" : "wal010", "websiteURL" : "http://espn.go.com", "displayName" : "Walnut Communications" },"wavebroadband" : { "ID" : "wavebroadband", "websiteURL" : "http://espn.go.com", "displayName" : "Wave Broadband" },"web020" : { "ID" : "web020", "websiteURL" : "http://espn.go.com", "displayName" : "Webster-Calhoun Cooperative Telephone Association" },"wes005" : { "ID" : "wes005", "websiteURL" : "http://espn.go.com", "displayName" : "West Alabama TV Cable" },"carolinata" : { "ID" : "carolinata", "websiteURL" : "http://espn.go.com", "displayName" : "West Carolina Communications" },"wct010" : { "ID" : "wct010", "websiteURL" : "http://espn.go.com", "displayName" : "West Central Telephone Association" },"wes110" : { "ID" : "wes110", "websiteURL" : "http://espn.go.com", "displayName" : "West River Cooperative Telephone Company" },"ani030" : { "ID" : "ani030", "websiteURL" : "http://espn.go.com", "displayName" : "WesTel Systems" },"westianet" : { "ID" : "westianet", "websiteURL" : "http://espn.go.com", "displayName" : "Western Iowa Networks" },"nttcwhi010" : { "ID" : "nttcwhi010", "websiteURL" : "http://espn.go.com", "displayName" : "Whidbey Telecom" },"weh010-white" : { "ID" : "weh010-white", "websiteURL" : "http://espn.go.com", "displayName" : "White County Cable TV" },"wes130" : { "ID" : "wes130", "websiteURL" : "http://espn.go.com", "displayName" : "Wiatel" },"wik010" : { "ID" : "wik010", "websiteURL" : "http://espn.go.com", "displayName" : "Wiktel" },"wil070" : { "ID" : "wil070", "websiteURL" : "http://espn.go.com", "displayName" : "Wilkes Communications, Inc." },"wil015" : { "ID" : "wil015", "websiteURL" : "http://espn.go.com", "displayName" : "Wilson Communications" },"win010" : { "ID" : "win010", "websiteURL" : "http://espn.go.com", "displayName" : "Windomnet/SMBS" },"win090" : { "ID" : "win090", "websiteURL" : "http://espn.go.com", "displayName" : "Windstream" },"WINDSTREAM" : { "ID" : "WINDSTREAM", "websiteURL" : "http://espn.go.com", "displayName" : "Windstream Kinetic TV" },"wcta" : { "ID" : "wcta", "websiteURL" : "http://espn.go.com", "displayName" : "Winnebago Cooperative Telecom Association" },"WOW" : { "ID" : "WOW", "websiteURL" : "http://www.wowway.net/index.php", "displayName" : "WOW!" },"wtc010" : { "ID" : "wtc010", "websiteURL" : "http://espn.go.com", "displayName" : "WTC " },"wil040" : { "ID" : "wil040", "websiteURL" : "http://espn.go.com", "displayName" : "WTC Communications, Inc" },"yadtel" : { "ID" : "yadtel", "websiteURL" : "http://www.yadtel.net", "displayName" : "Yadtel Telecom" },"cou060" : { "ID" : "cou060", "websiteURL" : "http://espn.go.com", "displayName" : "Zito Media" }};
+
+ var ud = {}; 
+
+var tzStrings = { 'America/Puerto_Rico' : [0,1,2,3,4,10,11,14], 'America/New_York' : [0,1,2,3,4,11,12,14], 'America/Chicago' : [1,2,3,4,5,11,12,14], 'America/Denver' : [2,3,4,5,6,11,12,14], 'America/Phoenix' : [3,4,5,6,7,11,12,14], 'America/Los_Angeles' : [3,4,5,6,7,12,13,14], 'America/Anchorage' : [4,5,6,7,8,12,13,14], 'America/Adak' : [4,5,6,7,8,12,13,14], 'Pacific/Honolulu' : [5,6,7,8,9,12,13,14]};
+
+var aeLoader = aeLoader || {};e3const.aeLoaderAttempts = 0;
+e3const.launchPlayerQueue = null;
+e3const.passenv = "prod";
+aeLoader.AccessEnablerLocation = "http://entitlement.auth.adobe.com/entitlement/AccessEnabler.swf";
+
+
+if(top !== self){top.location = e3const.p_WATCHESPN + "/index"}
+e3const.launchPlayer = null;
+		if(country =='australia'){
+			window.location = 'http://espn3.com.au';
+		}else if(country =='new zealand'){
+			window.location = 'http://espn3.co.nz';
+		}
+
+		var mobileRedirect = false;
+		var rbSrc = "null";
+		var ua = navigator.userAgent;
+		var qs = "?watchsrc=true";
+
+		if(ua.match(/iPad/i) || ua.match(/iP(od|hone)/i)){
+			qs = qs + "&device=ios";
+			mobileRedirect = true;
+		}else if(ua.match(/Android/i)){
+			qs = qs + "&device=android";
+			mobileRedirect = true;
+		}
+		else if(ua.match(/Blackberry/i)){
+			qs = qs + "&device=blackberry";
+			device="blackberry";
+			mobileRedirect = true;
+		}
+		else if(ua.match(/IEMobile/i)){
+			qs = qs + "&device=windows_phone";
+			device="windows_phone";
+			mobileRedirect = true;
+		}
+		else if(ua.match(/Kindle/i)){
+			qs = qs + "&device=kindle";
+			device="kindle";
+			mobileRedirect = true;
+		}
+
+		if(mobileRedirect && rbSrc != "true" && g_pageType != "watchespnfaq"){
+			
+				qs = qs +"&";
+			
+			window.location = "http://espn.go.com/watchespn/roadblock"+qs;
+		}
+	
+		if(window.location.hash != null && window.location.hash != ''){
+			var redirectUrl = window.location.href;
+			var hasParams = false;
+			if(redirectUrl.indexOf("/_/") != -1){
+				hasParams = true;
+				redirectUrl = redirectUrl.substring(redirectUrl.indexOf("/_/")+3, redirectUrl.indexOf("#"));
+			}
+
+			var redirectArgs = '';
+
+			var validArgs = ["type", "sport", "channel", "league", "upcoming-days", "days", "search", "startDate"];
+
+			var redirectUrlAry = redirectUrl.split("/");
+			var urlHashAry = window.location.hash.replace("#", "").split("/");
+
+			/***
+			*
+			*	FOR ALL PARAMETERS THAT AREN'T ALREADY IN THE PARAM LIST
+			*
+			*/
+			if(urlHashAry.length > 0){
+				for(i = 0; i < urlHashAry.length; i++){
+					if(jQuery.inArray(urlHashAry[i], validArgs) != -1){
+						var hasHashArg = false;
+						for(j = 0; j < redirectUrlAry.length; j++){
+							if(redirectUrlAry[j] == urlHashAry[i]){
+								hasHashArg = true;
+							}
+						}
+						if(!hasHashArg){
+							redirectArgs = redirectArgs + urlHashAry[i] + '/' + urlHashAry[i+1].replace('livenow', 'live') + '/';
+						}
+					}
+				}
+			}
+
+			/**
+			*
+			*	NOW WE WANT TO REPLACE ALL PARAMS WITH VALUES THAT ARE ON THE HASH IF THEY EXIST
+			*
+			*/
+			if(redirectUrlAry.length > 0 && hasParams){
+
+				for(i = 0; i < redirectUrlAry.length; i++){
+					if(jQuery.inArray(redirectUrlAry[i], validArgs) != -1){
+						var hasHashArg = false;
+						for(j = 0; j < urlHashAry.length; j++){
+							if(redirectUrlAry[i] == urlHashAry[j]){
+								redirectArgs = redirectArgs + redirectUrlAry[i] + '/' + urlHashAry[j+1].replace('livenow', 'live')	+ '/';
+								hasHashArg = true;
+							}
+						}
+						if(!hasHashArg){
+							redirectArgs = redirectArgs + redirectUrlAry[i] + '/' + redirectUrlAry[i+1].replace('livenow', 'live') + '/';
+						}
+					}
+				}
+			}else{
+				redirectArgs = window.location.hash.replace("#", "");
+			}
+			window.location = e3const.p_WATCHESPN + '/index/_/' + redirectArgs;
+		}
+	e3const.source = "";
+
+	var ad_site = 'espn.us.com.watchespn';
+	var ad_zone = 'index';
+	var ad_kvps = 'pgtyp=watchespnindex;sp=espn;';
+	var ad_root = 'watchespn';
+	var ad_swid = '';
+	var ad_counter = 1;
+	var ad_ord = Math.floor(Math.random()*9999999999);
+	var ad_seg = '';
+
+	ad_swid = jQuery.cookie('SWID');
+	if(typeof espn.core.ad_segments == 'function') {
+		ad_seg = espn.core.ad_segments();
+		if (ad_seg != null && ad_seg != '') {
+			ad_kvps = ad_kvps + ad_seg
+		}
+	}
+
+	// the u
+	var ad_u = 'u=pgtyp=watchespnindex|sp=espn';
+	var ad_seg_u = ad_seg;
+	if (ad_swid != null && ad_swid != '' && ad_swid != 'null') {
+		if (ad_swid.length > 54) {
+			ad_swid = ad_swid.substring(0,54);
+		}
+		ad_newu = 'u=swid='+ad_swid+'|';
+		ad_u = ad_u.replace('u=',ad_newu);
+	}
+	if (ad_seg_u != null && ad_seg_u != '' && ad_seg_u != 'null') {
+		while(ad_seg_u.indexOf(';')!=-1) {
+			ad_seg_u = ad_seg_u.replace(';','|');
+		}
+		ad_u = ad_u + '|' + ad_seg_u;
+	}
+	ad_u = ad_u + ';';
+	if (ad_u.length > 255) {
+		ad_u = ad_u.substring(0,254);
+	}
+	
+
+		 /* temporary, remove when implemented */
+		.post-message { width:450px; margin-bottom:25px; padding:20px; }
+		 /* end temporary, remove when implemented */
+		.post-message, .post-message .text { font: normal 14px/20px arial, helvetica,sans-serif; color:#363536; vertical-align:middle; }
+		.post-message .icon { padding-right:15px; width:45px; }
+		.post-message .message-id, .post-message table { margin-bottom:15px; }
+		.post-message .message-id { text-align:left; padding:10px 0; }
+		.post-message .message-footer { font-size:11px; text-align:left; }
+		.post-message .message-id span { display:inline-block; padding:2px 10px; background:transparent; color:#fff; font-weight:700; font-size:11px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius:4px; }
+		.post-message.error .message-id span { background:#cc0000; }
+		.post-message.notice .message-id span { background:#0c8000; }
+		.post-message.warning .message-id span { background:#d2c106; }
+		.post-message .text p { margin-bottom:12px; text-align: left !important;}
+		.post-message .text ul { list-style: disc; list-style-type: disc; margin:0 0 10px 18px; text-align: left !important;}
+	
+
+
+
+
+
+		var att = { data:"http://assets.espn.go.com/espn360/2.0/flash/2/BA7FD31.swf", width:"1", height:"1" };
+		var par = { allowscriptaccess:"always"  };
+		var id = "BA7FD31";
+		var mn_movie = swfobject.createSWF(att, par, id);
+		var brand = "brand";
+		function BA7FD31_ready() {
+			if(ud.canaddsso == "true")
+			{
+				ud.useraccountvalid = mn_movie.canAdd(ud.username);
+			}
+		}
+	
+
+
+
+
+
+
+
+ESPN.COM
+TV Schedule
+
+
+
+
+
+
+Watch ESPN
+
+
+
+ 
+
+
+Click on the button below to log out of your Comcast account:
+Logout
+
+
+
+
+
+
+
+
+HOMEFAQsWHAT IS WATCHESPN?APPSCONTACTWATCH NOW »
+
+
+
+
+
+
+
+
+
+	if (typeof ad_kvps != 'undefined' && typeof ad_u != 'undefined' && typeof ad_counter != 'undefined' && typeof ad_ord != 'undefined') {
+		if (typeof ad_site == 'undefined' || typeof ad_zone == 'undefined') {
+			var ad_site = 'espn.us.com.watchespn';
+			var ad_zone = 'index';
+		}
+		var ad_finalString = 'http://ad.Doubleclick.net/adj/'+ad_site+'/'+ad_zone+';' +ad_kvps+ 'pos=Banner;' +ad_u+ 'sz=728x90,970x66,924x50,1x1;tile=' +ad_counter+ ';ord=' +ad_ord+';mnr=f';
+		document.write('<scr'+'ipt src='+ad_finalString+'></scr'+'ipt>');
+		ad_counter++;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+			e3const.selectedEventId = "null";
+			e3const.selectedChannel = "null";
+			e3const.selectedLeague = "null";
+			e3const.selectedGameId = "null";
+			e3const.selectedProvider = "null";
+		
+ 
+
+
+ 
+
+
+
+
+
+Morgan State vs. Hampton (Quarterfinal #1) (MEAC Men's Tournament)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 6:00 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+ 
+
+
+
+
+
+New Orleans vs. Southeastern Louisiana (First Round, Game 1) (Southland Men's Basketball Tournament)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 6:00 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+ 
+
+
+
+
+
+Gonzaga vs. Saint Mary's (Championship) (West Coast Conference Men's Tournament)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Tue Mar 8, 2016 9:00 PM
+
+
+
+
+ 
+
+
+
+
+
+Green Bay vs. Wright State (Championship) (Horizon League Men's Championship)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Tue Mar 8, 2016 7:00 PM
+
+
+
+
+ 
+
+
+
+
+
+North Dakota State vs. South Dakota State (Championship) (Summit League Men's Championship)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Tue Mar 8, 2016 9:00 PM
+
+
+
+
+
+
+
+
+
+
+
+
+
+Minnesota vs. Illinois (First Round, Game 1) (Big Ten Men's Tournament)
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 4:30 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+
+
+
+
+
+
+
+Morgan State vs. Hampton (Quarterfinal #1) (MEAC Men's Tournament)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 6:00 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+
+
+
+
+
+
+
+NFL Insiders: Free Agency Presented by Fidelity
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 4:30 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+
+
+
+
+
+
+
+The Paul Finebaum Show
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 3:00 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+
+
+
+
+
+
+
+New Orleans vs. Southeastern Louisiana (First Round, Game 1) (Southland Men's Basketball Tournament)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+Wed Mar 9, 2016 6:00 PM(Blacked out on ESPN3 - View Map)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Live Now
+Upcoming
+Replay
+
+
+
+
+
+
+Sports and Shows:
+
+All
+
+
+All
+
+
+
+
+Action SportsBaseballBasketballBowlingBoxingCollege StudioCombat SportsCricketCurlingESPN Original EntertainmentESPN RadioFencingFootballGymnasticsHandballHockey
+
+LacrosseLonghorn NetworkRugbySoccerSoftballSoutheastern ConferenceSportsCenterSwimmingTalkTennisTrack and FieldVolleyballWrestlingHorseshow Jumping
+
+
+
+			jQuery('#livenowtab .category-filter').unbind('click');
+			jQuery('#livenowtab .category-filter').each(function(i){
+				jQuery(this).click(function(e){
+					e.preventDefault();
+
+					//filter categories
+					var filterCat = jQuery(this).attr('id');
+					var fitlerCatCanon = jQuery(this).parent().attr('id');
+
+					if(filterCat != "category-all"){
+						window.location.hash = processHashArg('sport', fitlerCatCanon);
+					}else{
+						window.location.hash = unprocessHashArg('sport');
+					}
+
+					GlobalFilter.setCategoryDropdown(filterCat);
+					GlobalFilter.filterCategory(filterCat, true);
+					GlobalFilter.cleanUpSections();
+				});
+			});
+		
+
+
+
+
+
+Network:
+
+All Networks
+
+
+All Networks
+ESPN
+ESPN2
+ESPN3
+ESPNU
+SEC Network
+SEC Network +
+ESPNews
+ESPN Deportes
+Longhorn Network
+Buzzer Beater
+
+
+
+
+
+
+
+	jQuery('#livenowtab .channel-filter').unbind('click');
+	jQuery('#livenowtab .channel-filter').each(function(i){
+		jQuery(this).click(function(e){
+			e.preventDefault();
+
+			//filter channels
+			filterChan = jQuery(this).attr('id');
+
+			if(filterChan != "channel-all"){
+				window.location.hash = processHashArg('channel', filterChan);
+			}else{
+				window.location.hash = unprocessHashArg('channel');
+			}
+
+			GlobalFilter.setChannelDropdown(filterChan);
+			GlobalFilter.filterChannel(filterChan, true);
+			GlobalFilter.cleanUpSections();
+
+		});
+	});
+
+
+
+
+
+
+			There are currently no Live events for this selection.  Please try Replay or Replay.
+		
+live
+
+
+Baseball
+
+
+All Leagues
+
+
+All Leagues
+MLB
+NCAA Baseball
+USSSA
+AAU
+Amateur
+Little League World Series
+Little League Intermediate
+Senior League Baseball
+Junior League Baseball
+Big League Softball
+American Legion
+Atlantic League of Professional Baseball
+Youth Baseball
+Serie de las Americas
+
+
+
+
+
+NCAA Baseball4:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Gonzaga vs. #14 Arkansas 
+(Blacked out on ESPN3 - View Map)SECPLUS4:00 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										Penn State vs. Duke (Baseball) 
+(Blacked out on ESPN3 - View Map)ESPN34:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Alabama A&M; vs. Missouri (Baseball) 
+(Blacked out on ESPN3 - View Map)SECPLUS5:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Radford vs. #2 Vanderbilt (Baseball) 
+(Blacked out on ESPN3 - View Map)SECPLUS5:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Southeast Missouri State vs. #13 Ole Miss (Baseball) 
+(Blacked out on ESPN3 - View Map)SECPLUS6:00 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										Stetson vs. #6 Miami (FL) (Baseball) 
+(Blacked out on ESPN3 - View Map)ESPN3
+Basketball
+
+
+All Leagues
+
+
+All Leagues
+NBA
+WNBA
+NBA Summer League
+ABA
+Basketball Alumni Legends League
+Warrior Games
+AAU
+NCAAM
+NCAAW
+USA Basketball
+Boys High School Basketball
+FIBA U19 Women's World Championship
+Collegiate Wheelchair Basketball
+The Basketball Tournament
+FIBA U17 World Championship
+Youth Basketball
+FIBA Basketball World Cup
+Entertainers Basketball Classic
+FIBA World Championship for Women
+Premier Basketball League
+FIMBA World Championship
+FIBA
+FIBA Americas
+FIBA EuroBasket
+
+
+
+
+
+NCAAM4:30 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Minnesota vs. Illinois (First Round, Game 1) (Big Ten Men's Tournament) 
+(Blacked out on ESPN3 - View Map)ESPN26:00 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										New Orleans vs. Southeastern Louisiana (First Round, Game 1) (Southland Men's Basketball Tournament) 
+Closed captioning available (Blacked out on ESPN3 - View Map)ESPN36:00 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										Morgan State vs. Hampton (Quarterfinal #1) (MEAC Men's Tournament) 
+(Blacked out on ESPN3 - View Map)ESPN3NCAAW6:00 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										Texas State vs. Arkansas-Little Rock (Quarterfinal #3) (Sun Belt Conference Women's Championship) 
+(Blacked out on ESPN3 - View Map)ESPN3
+College Studio
+
+
+All Leagues
+
+
+All Leagues
+NCAA
+NCAA Baseball
+NCAAF
+NCAAM
+NCAAW
+NCAA Wrestling
+NCAA Women's Volleyball
+NCAA Women's Swimming and Diving
+NCAA Women's Soccer
+NCAA Women's Lacrosse
+NCAA Women's Hockey
+NCAA Women's Gymnastics
+NCAA Women's Fencing
+NCAA Women's Bowling
+NCAA Volleyball
+NCAA Track and Field
+NCAA Swimming and Diving
+NCAA Softball
+NCAA Men's Water Polo
+NCAA Men's Volleyball
+NCAA Men's Swimming and Diving
+NCAA Men's Soccer
+NCAA Men's Lacrosse
+NCAA Men's Hockey
+NCAA Men's Gymnastics
+NCAA Men's Fencing
+NCAA Men's and Women's Fencing
+NCAA Lacrosse
+NCAA Hockey
+NCAA Field Hockey
+
+
+
+
+
+5:30 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Big 12 This Week 
+(Blacked out on ESPN3 - View Map)LONGHORN
+Curling
+
+
+All Leagues
+
+
+All Leagues
+European Curling
+Canadian Curling Association
+World Women's Curling Championship
+World Men's Curling Championship
+
+
+
+
+
+Canadian Curling Association2:30 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										Alberta vs. Quebec (Curling) 
+(Blacked out on ESPN3 - View Map)ESPN3
+ESPN Radio3:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										The Paul Finebaum Show 
+(Blacked out on ESPN3 - View Map)SEC4:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Jorge Ramos Y Su Banda 
+(Blacked out on ESPN3 - View Map)ESPNDEPORTES
+Football
+
+
+All Leagues
+
+
+All Leagues
+NFL
+NCAAF
+CFL
+High School Football
+Youth Football
+Pop Warner
+NFLPA
+USA Football
+AFL
+Fall Experimental Football League
+Collegiate Sprint Football League
+
+
+
+
+
+NFL4:30 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										NFL Insiders: Free Agency Presented by Fidelity 
+(Blacked out on ESPN3 - View Map)ESPN
+Softball
+
+
+All Leagues
+
+
+All Leagues
+NCAA Softball
+USSSA
+National Pro Fastpitch 
+USA Softball
+World Softball Championship
+Senior League Softball
+Little League Softball
+Junior League Softball
+Big League Baseball
+
+
+
+
+
+NCAA Softball4:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										South Dakota vs. #1 Florida (Softball) 
+(Blacked out on ESPN3 - View Map)SECPLUS5:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Tennessee State vs. #3 Auburn (Softball) 
+(Blacked out on ESPN3 - View Map)SECPLUS5:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Youngstown State vs. Ole Miss (Softball) 
+(Blacked out on ESPN3 - View Map)SECPLUS6:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										Indiana vs. #15 Kentucky (Softball) 
+(Blacked out on ESPN3 - View Map)SECPLUS
+Talk5:30 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										SportsNation Presented by Toyota 
+(Blacked out on ESPN3 - View Map)ESPNEWS
+Tennis
+
+
+All Leagues
+
+
+All Leagues
+WTA
+ATP
+ATP and WTA 
+Australian Open
+Wimbledon
+French Open
+Emirates Airline US Open Series
+US Open
+Tennis
+BNP Paribas Showdown
+USTA
+NCAA Tennis
+NCAA Men's Tennis
+NCAA Women's Tennis
+
+
+
+
+
+WTA2:00 PM EST
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+										BNP Paribas Open (First Round) 
+(Blacked out on ESPN3 - View Map)ESPN3
+Track And Field
+
+
+All Leagues
+
+
+All Leagues
+NCAA Track and Field
+Track and Field
+UIPM
+Cross Country Running
+IAAF
+
+
+
+
+
+NCAA Track and Field5:00 PM EST
+
+This program is available only to customers of cable providers that offer WatchESPN
+Verify Your Access
+
+
+										SEC Indoor Track & Field Championship 
+(Blacked out on ESPN3 - View Map)ESPNU
+There are currently no live events for this selection. Please check Upcoming or Replay.
+
+
+
+
+
+
+
+
+
+
+
+Advertisement
+
+
+
+
+jQuery(document).ready(function(){showAdsForMinors();});
+
+ESPN3 Events
+
+
+
+
+
+
+BNP Paribas Open (First Round)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+
+Watch Live 
+
+
+
+
+
+
+
+
+Alberta vs. Quebec (Curling)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+
+Watch Live 
+
+
+
+
+
+
+
+
+Penn State vs. Duke (Baseball)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+
+Watch Live 
+
+
+
+
+
+
+
+
+Texas State vs. Arkansas-Little Rock (Quarterfinal #3) (Sun Belt Conference Women's Championship)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+
+Watch Live 
+
+
+
+
+
+
+
+
+Stetson vs. #6 Miami (FL) (Baseball)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+
+Watch Live 
+
+
+
+
+
+
+
+
+New Orleans vs. Southeastern Louisiana (First Round, Game 1) (Southland Men's Basketball Tournament)
+
+This program is available only to customers of cable and internet providers that offer ESPN3 or WatchESPN
+Verify Your Access
+
+
+
+Watch Live 
+
+
+
+
+
+
+
+
+
+
+
+
+		var link = window.location;
+		var bugText = '<a href="#" onclick="window.open(\'http://dynamic.espn.go.com/espn/bugs?url=' + escape(link) + '\', \'Bugs\',\'noresizable,noscrollbars,height=400,width=400\');">Report a Bug</a>';
+		
+
+ESPN.com:
+
+Help
+Press
+Advertise On ESPN.com
+Sales Media Kit
+Interest-Based Ads
+document.write(bugText);
+Corrections
+Contact Us
+Site Map
+
+Jobs
+Supplier Information
+
+
+©2015 ESPN Internet Ventures. Terms of Use and Privacy Policy and Safety Information/Your California Privacy Rights are applicable to you.  All rights reserved.
+
+
+
+
+ 
+
+
+		var e3aff = 'invalid';
+		if(typeof ud != 'undefined'){
+			if (ud.name != '' && ud.name != null && ud.name != 'null') {
+			   e3aff = ud.name;
+			}
+		}
+		
+		
+			var e3fullString = 'watchespn:home:index:' + e3aff;
+		
+		
+	
+
+
+
+	var undef = "undefined";
+	var s_account="wdgesp360";
+	var omniSite = "watchespn";
+	var omniPageName = "watchespn:home:index";
+	
+	var insiderStatus = ""
+	,anGen = ""
+	,anYear = ""
+	,anDateString = ""
+	,anLoginStatus = ""
+	,callOmniture = function(){
+		/*-- core story s_omni properties --*/
+		if (typeof anCV != "undefined"){anParseLoginBarInfo(anCV);}
+		s_omni.pageName="home:index";
+		s_omni.server = window.location.host; // Server from the Host
+		s_omni.channel = "home";
+		s_omni.prop1 = "watchespn";
+		s_omni.prop4 = "index";
+		s_omni.prop5 = "home:index";
+		s_omni.prop11 = (insiderStatus !== null) ? insiderStatus + ":premium-no" : "premium-no";
+		s_omni.prop17 = "en";
+		s_omni.hier1 = "home:index";
+		s_omni.eVar7 = anYear + ":" + anGen + ":" + anLoginStatus + ":" + s_omni.prop11 + ":";
+		s_omni.eVar9 = "en";
+		s_omni.eVar13 = "home:index";
+		
+		if (s_omni.prop11=="anonymous:premium-yes" || s_omni.prop11=="insider-no:premium-yes" && typeof s_omni.prop4!="undefined" &&
+			(s_omni.prop4=="story" || s_omni.prop4=="blog")) {
+			if (typeof s_omni.events != "undefined" && s_omni.events!="") {
+				s_omni.events = s_omni.events+",event8";
+			} else { 
+				s_omni.events="event8";
+			}
+		}
+		
+		s_omni.prop38 = "Desktop";
+		s_omni.eVar38 = "D=c38";
+		
+		
+	// WatchESPN code to add to global analytics output
+   	if (typeof e3aff !== undef && e3aff !== "" && typeof e3fullString !== undef && e3fullString !== "") {
+		s_omni.prop42 = e3fullString;
+		s_omni.prop43 = e3aff;
+		s_omni.eVar17 = e3fullString;
+		s_omni.eVar32 = e3aff;
+   	}
+   	var referrer = window.document.referrer;
+   	if(referrer && referrer !== "") {
+   		s_omni.eVar35 = referrer;
+   	}
+		anVersion = "_11apr14_v2_0_r5_";
+		
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		
+		var s_code = s_omni.t();
+		if(s_code) {
+			var sci = new Image(1,1);
+			sci.onload = function() {console.log("loaded no append")};
+			sci.src = s_code;
+		}
+		
+		
+		// init blueKai
+		if(espn && espn.track && typeof espn.track.bluekai === "function") {
+			espn.track.bluekai();
+		}
+		
+	};	
+
+
+	if (typeof(s_omni) === 'undefined') {
+		(function($) {
+			// we want to load the analytics files from the cache if possible - so, let's use full $.ajax() calls
+			$.ajax({
+				type:'GET',
+				url: 'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=15',
+				dataType: 'script',
+				cache: true,
+				success: function() {
+					var lgSrc;
+					if(typeof anCV !== undef && anCV === '' && $('#form-memberarea').length > 0) {
+						lgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently&regType=true';
+						$.getScript(lgSrc); // we don't want this to be cached - so we'll use the $.getScript() method
+					} else {
+						callOmniture();
+					}
+				}
+			});
+
+		}(jQuery));
+	}
+
+
+
+
+	if (typeof(jQuery) !== 'undefined') {
+		jQuery(function($) {
+			if(typeof window._comscore === 'undefined') {
+				window._comscore = window._comscore || [];
+				window._comscore.push({ c1: "2", c2: "3000005" });
+				jQuery.getScript((document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js");
+			}
+		});
+	}
+
+
+
+
+	espn = window.espn || {};
+	espn.track = espn.track || {};
+	espn.track.bluekai = function(){
+		window.bk_async = function(){
+		 	try{
+				if(typeof s_omni !== 'undefined'){
+					bk_addPageCtx("pageName", (typeof s_omni.pageName !== 'undefined' ? s_omni.pageName : ''));
+					bk_addPageCtx("channel", (typeof s_omni.channel !== 'undefined' ? s_omni.channel : ''));
+					bk_addPageCtx("eVar34", (typeof s_omni.prop45 !== 'undefined' ? s_omni.prop45 : ''));
+					bk_addPageCtx("events", (typeof s_omni.events !== 'undefined' ? s_omni.events : ''));
+					bk_addPageCtx("prop1", (typeof s_omni.prop1 !== 'undefined' ? s_omni.prop1 : ''));
+					bk_addPageCtx("swid", (espn.core && typeof espn.core.SWID !== 'undefined' ? espn.core.SWID : ''));
+					bk_addPageCtx("prop4", (typeof s_omni.prop4 !== 'undefined' ? s_omni.prop4 : ''));
+					bk_addPageCtx("prop9", (typeof s_omni.prop9 !== 'undefined' ? s_omni.prop9 : ''));
+					bk_addPageCtx("prop23", (typeof s_omni.prop23 !== 'undefined' ? s_omni.prop23 : ''));
+					bk_addPageCtx("prop25", (typeof s_omni.prop25 !== 'undefined' ? s_omni.prop25 : ''));
+					bk_addPageCtx("prop26", (typeof s_omni.prop26 !== 'undefined' ? s_omni.prop26 : ''));
+					bk_addPageCtx("prop30", (typeof s_omni.prop30 !== 'undefined' ? s_omni.prop30 : ''));
+					bk_addPageCtx("prop32", (typeof s_omni.prop32 !== 'undefined' ? s_omni.prop32 : ''));
+					bk_addPageCtx("prop45", (typeof s_omni.prop45 !== 'undefined' ? s_omni.prop45 : '')); // set for tv channels, which we don't have right now
+				}
+			}
+			catch(e){}
+			window.bk_allow_multiple_calls = true;
+			window.bk_use_multiple_iframes = true;
+			window.bk_pixel_url = 'https://tags.bluekai.com/';
+			window.bk_pixel_secure = 'https://tags.bluekai.com/';
+			if(window.BKTAG) { window.BKTAG.doTag(24667, 10); }
+		};
+		if(espn.track.bluekai.init === undefined){
+			var scripts = document.getElementsByTagName('script')[0];
+			var s = document.createElement('script');
+			s.async = true;
+			s.src = 'https://tags.bkrtx.com/js/bk-coretag.js';
+			scripts.parentNode.insertBefore(s, scripts);
+			espn.track.bluekai.init = true;
+		} else {
+			window.bk_async();
+		}
+	};
+
+
+
+
+
+
+
+
+What you can do:
+
+
+
+
+
+ 
+
+
+
+
+
+
+	var axel = Math.random() + "";
+	var a = axel * 10000000000000;
+	document.write('<iframe src="http://fls.doubleclick.net/activityi;src=1181183;type=espn3189;cat=espn3694;ord=1;num='+ a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+	
+
+
+
+
+
+
+	var ebRand = Math.random()+'';
+	ebRand = ebRand * 1000000;
+	document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=213935&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+	
+
+
+
+
+
+
